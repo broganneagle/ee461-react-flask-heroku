@@ -1,3 +1,83 @@
 .hostName {
   font-family: "Comic Sans MS";
 }
+
+.App {
+  text-align: center;
+}
+
+body{
+  text-align: left;
+}
+h1 {
+  text-align: left;
+}
+
+p1{
+  text-align: left;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+p2{
+  padding-right: 500px;
+
+}
+
+p3{
+  padding-left: 350px;
+  padding-right: 50px;
+}
+
+p4{
+  padding-left: 350px;
+  padding-right: 58px;
+}
+
+button.join{
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+
+
+.checkin{
+  padding-right: 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+
+}
