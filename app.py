@@ -33,13 +33,13 @@ def checkOut_hardware(projectid, qty):
 @app.route("/<qt>")
 def quantit(qt):
     return f"<h2>{qt} hardware checked out</h2>"
-@app.route('/joinProj', methods=["POST", "GET"])
+@app.route('/joinProj/<projectid>', methods=["POST", "GET"])
 def joinProject(projectid):
-    return f"<h3>Joined {projectid}</h3>"
+    return f"<h3>Joined {projectid}</h3>".format(projectid)
 
-@app.route('/leaveProj', methods=["POST", "GET"])
+@app.route('/leaveProj/<projectid>', methods=["POST", "GET"])
 def leaveProject(projectid):
-    return f"<h4>Left {projectid}</h4>"
+    return f"<h4>Left {projectid}</h4>".format(projectid)
 
 if __name__ == '__main__':
     # flask_app.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))

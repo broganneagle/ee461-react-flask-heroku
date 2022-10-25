@@ -38,7 +38,6 @@ function App() {
       <button onClick={() => setButtonPopup(true)}>Check In</button>
       <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
         <h2>Qty hardware checked in</h2>
-        flask
       </Popup>
       <input method="post"/>
       <button onClick={() => setButtonOut(true)}>Check Out</button>
